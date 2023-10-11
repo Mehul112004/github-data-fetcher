@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    background-image:url(bg.jpg);
+    background-position: center;background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.inputs{
+    width: 300px;
+    padding: 10px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.inputs>label{
+    font-size: 30px;
+}
+.inputs>button{
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background: transparent;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    color: white;
+    transition: 0.3s;
+}
+.inputs>input{
+    border: none;
+    background-color:rgba(0, 0, 0, 0.408);
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+.inputs>button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.inputs>button:active{
+    transform:scale(0.95)
+}
+.card{
+    /* border: 1px solid white; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    display: none;
+}
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* display: none; */
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+.card>h3{
+    color: white;
+    font-size: 16px;
+}
